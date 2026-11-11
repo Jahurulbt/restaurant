@@ -1,0 +1,223 @@
+/* ==============================
+   9. Responsive Design
+================================= */
+
+@media (max-width: 992px) {
+
+    .header-container {
+        gap: 18px;
+    }
+
+    .nav-list {
+        gap: 16px;
+    }
+
+    .search-form input {
+        width: 110px;
+    }
+
+    .reservation-button {
+        padding: 11px 14px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .header-container {
+        min-height: 75px;
+        position: relative;
+        gap: 12px;
+    }
+
+    .site-logo {
+        font-size: 22px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .main-navigation {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-top: 1px solid #eeeeee;
+        padding: 20px;
+        margin: 0;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .main-navigation.is-open {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .nav-list a {
+        font-size: 15px;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+}
+
+
+/* 10. Tablet: 768px and above */
+@media (min-width: 768px) {
+  :root {
+    --container-gutter: 2rem;
+  }
+
+  .hero-section > .container {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 2.5rem;
+  }
+
+  .about-section > .container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .menu-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-content {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+}
+
+/* 11. Desktop: 1024px and above */
+@media (min-width: 1024px) {
+  :root {
+    --container-gutter: 2.5rem;
+  }
+
+  .hero-section {
+    min-height: 650px;
+  }
+
+  .hero-section > .container,
+  .about-section > .container {
+    gap: 4rem;
+  }
+
+  .menu-grid,
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-content {
+    gap: 3rem;
+  }
+}
+
+/* 12. Large desktop */
+@media (min-width: 1440px) {
+  :root {
+    --container-width: 1280px;
+  }
+}
+
+/* 13. Small mobile refinements */
+@media (max-width: 374px) {
+  :root {
+    --container-gutter: 1rem;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-actions a {
+    width: 100%;
+  }
+
+  .menu-categories ul {
+    gap: 0.4rem;
+  }
+
+  .menu-categories a {
+    padding-inline: 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 14. Motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* 6. RESPONSIVE STYLES — MOBILE FIRST */
+
+/* Small mobile */
+@media (max-width: 374px) {
+  :root { --container-gutter: 1rem; }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions a { width: 100%; }
+  .menu-categories ul { gap: .4rem; }
+  .menu-categories a { padding-inline: .75rem; font-size: .85rem; }
+  .footer-content { gap: var(--space-4); }
+  .footer-bottom { justify-content: flex-start; text-align: left; }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root { --container-gutter: 2rem; }
+  .hero-section > .container {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    gap: 2.5rem;
+  }
+  .about-section > .container {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+  .menu-grid, .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-content {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+  .footer-content {
+    grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  :root { --container-gutter: 2.5rem; }
+  .hero-section { min-height: 650px; }
+  .hero-section > .container, .about-section > .container { gap: 4rem; }
+  .menu-grid, .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .contact-content { gap: 3rem; }
+  .footer-content { gap: 3rem; }
+}
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  :root { --container-width: 1280px; }
+}

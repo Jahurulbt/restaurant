@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our restaurant, explore our menu, meet our chefs and get in touch.">
+    <title>Restaurant Name | Welcome</title>
+    <!-- ============ Main css ============== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    
+<header class="site-header">
+    <div class="container header-container">
+
+        <a href="#home" class="site-logo">
+            Restaurant<span>.</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-navigation" id="primary-navigation" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+
+            <form class="search-form" role="search" action="#" method="get">
+                <label class="visually-hidden" for="site-search">Search</label>
+                <input type="search" id="site-search" name="q" placeholder="Search...">
+            </form>
+
+            <a href="#contact" class="reservation-button">Reservation</a>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+        <section id="home" class="hero-section">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <h1>Delicious Food, Wonderful Experience</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, maxime error? Doloribus optio aut nesciunt nostrum unde in provident aperiam! Autem nobis ea fugiat aperiam odio incidunt consequuntur enim veniam!</p>
+
+                    <div class="hero-actions">
+                        <a href="#menu" class="primary-button">Explore Menu</a>
+                        <a href="#about" class="secondary-button">Learn More</a>
+                    </div>
+
+                </div>
+
+                <figure class="hero-image">
+                    <img src="images/hero-food.jpg" alt="Restaurant's signature food dish">
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about" class="about-section">
+
+            <div class="container">
+
+                <figure class="about-image">
+                    <img src="images/about-restaurant.jpg" alt="Interior of the restaurant">
+                </figure>
+
+                <div class="about-content">
+                    <h2>About Our Restaurant</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt, architecto sint cupiditate est reprehenderit soluta! Qui fugiat molestias quos error, necessitatibus velit? Voluptates molestias qui, animi magni incidunt atque.</p>
+                    <a href="#contact" class="text-link">Discover More</a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENU SECTION ================= -->
+        <section id="menu" class="menu-section">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <h2>Our Special Menu</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis harum dolore dolorum in perferendis odit, ullam soluta accusantium aut neque odio adipisci libero ipsum placeat voluptates quas a eum consequatur.</p>
+
+                </header>
+
+                <!-- Food Category Navigation -->
+                <nav class="menu-categories" aria-label="Food categories">
+
+                    <ul>
+                        <li><a href="#menu-items">All</a></li>
+                        <li><a href="#menu-items">Breakfast</a></li>
+                        <li><a href="#menu-items">Lunch</a></li>
+                        <li><a href="#menu-items">Dinner</a></li>
+                    </ul>
+
+                </nav>
+
+                <!-- Food Cards -->
+                <div id="menu-items" class="menu-grid">
+
+                    <article class="menu-card">
+
+                        <figure>
+                            <img src="images/food-01.jpg" alt="Placeholder for first menu item">
+                        </figure>
+
+                        <div class="menu-card-content">
+
+                            <h3>Mushroom</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quis! Consequatur voluptatum quas ipsam earum.</p>
+                            <p class="food-price"><span>Price : </span>$5.00</p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card">
+
+                        <figure>
+                            <img src="images/food-02.jpg" alt="Placeholder for second menu item">
+                        </figure>
+
+                        <div class="menu-card-content">
+
+                            <h3>Vegatables</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quis! Consequatur voluptatum quas ipsam earum.</p>
+                            <p class="food-price"><span>Price : </span> $7.00</p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="menu-card">
+
+                        <figure>
+                            <img src="images/food-03.jpg" alt="Placeholder for third menu item">
+                        </figure>
+
+                        <div class="menu-card-content">
+
+                            <h3>Burger</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, quis! Consequatur voluptatum quas ipsam earum.</p>
+                            <p class="food-price"><span>Price : </span> $4.00</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TEAM SECTION ================= -->
+        <section id="team" class="team-section">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <h2>Meet Our Chefs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum commodi voluptatem ratione, corporis iure consectetur repellat laboriosam in eveniet harum atque sequi asperiores sed quisquam possimus? Hic, fuga ipsa. Eius!</p>
+
+                </header>
+
+                <div class="team-grid">
+
+                    <article class="team-card">
+
+                        <figure>
+                            <img src="images/chef-01.jpg" alt="Portrait of chef one">
+                        </figure>
+
+                        <div class="team-card-content">
+
+                            <h3>London</h3>
+                            <p>Ceo Chef</p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-card">
+
+                        <figure>
+                            <img src="images/chef-02.jpg" alt="Portrait of chef two">
+                        </figure>
+
+                        <div class="team-card-content">
+
+                            <h3>Green restaurant</h3>
+                            <p>Managing director</p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="team-card">
+
+                        <figure>
+                            <img src="images/chef-03.jpg" alt="Portrait of chef three">
+                        </figure>
+
+                        <div class="team-card-content">
+
+                            <h3>Marrakech</h3>
+                            <p>Manager</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section id="contact" class="contact-section">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <h2>Contact Us</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum asperiores officiis iure facilis suscipit laudantium sit beatae eius totam? Harum, sed hic odio excepturi quasi delectus facere nihil et!</p>
+
+                </header>
+
+                <div class="contact-content">
+
+                    <!-- Contact Information -->
+                    <address class="contact-information">
+
+                        <h3>Delicious food restaurant</h3>
+                        <p> Address: #230 of 23,829 Restaurants in London</p>
+
+                        <p>Phone:<a href="tel:[PHONE_NUMBER]"> +027893</a></p>
+                        <p>Email: <a href="mailto:[EMAIL_ADDRESS]">londoni@gmail.com</a></p>
+
+                    </address>
+
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" action="#" method="post">
+
+                        <div class="form-group">
+
+                            <label for="name">Your Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Your Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">Your Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="footer-logo">Delicious Food</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur reiciendis recusandae corrupti maxime nulla quo porro vitae adipisci cupiditate ipsa, dolorem ut, possimus culpa cumque magnam blanditiis veniam sequi!</p>
+
+                </div>
+
+
+                <nav class="footer-navigation" aria-label="Footer navigation">
+
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+
+
+                <div class="footer-social">
+
+                    <h2>Follow Us</h2>
+
+                    <ul>
+                        <li><a href="[FACEBOOK_URL]">Facebook</a></li>
+                        <li><a href="[INSTAGRAM_URL]">Instagram</a></li>
+                        <li><a href="[YOUTUBE_URL]">YouTube</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>&copy; 2026 Restaurant Name. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================== Arrow section ===================== -->
+     <div class="arrow-section">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+     </div>
+
+     <!-- Font awsome kit -->
+      <script src="https://kit.fontawesome.com/7a6364edff.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery link -->
+     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+    <!-- Main js -->
+     <script src="js/main.js"></script>
+     <script src="js/script.js"></script>
+
+</body>
+</html>
